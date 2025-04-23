@@ -8,9 +8,14 @@ Take home assignment submission.
 "For this exercise, we are asking that you evaluate the code example that we provide, find any existing issues with the code, improve the code to ensure that it meets the provided requirements"
 
 Requirements:
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
+* Must use either the provided Go or Python code as your starting point
+* Must accept a YAML configuration as command line argument
+* YAML format must match that in the sample provided
+* Must accurately determine the availability of all endpoints during every check cycle
+* Endpoints are only considered available if they meet the following conditions: Endpoints are only considered available if they meet the following conditions, Endpoint responds in 500ms or less
+* Must return availability by domain
+* Must determine availability cumulatively
+* Check cycles must run and log availability results every 15 seconds regardless of the number of endpoints or their response times
 
 ## Changes made
 
