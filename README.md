@@ -19,11 +19,14 @@ Requirements:
 
 ## Changes made
 
-### Input-related Fixes
+### Input-related Fix
 
 * Issue - The code does assumes that the input config yaml file will always have all the required parameters such as headers, method, body.
 Therefore, the code fails for inputs from the config file on lines 7,8 and 15,16.
 * Resolution - I improved the code by adding defaults for these parameters if they are absent from any of the config file's yaml array entries.
+
+### Requirement-related Fix
+
 * Issue - Requirement for "must ignore port numbers when determining domain".
 * Resolution - I tested with a sample domain that includes a port number, and the script added the port number as part of the domain. I added another split on a colon, in order to strip out the port number
 
